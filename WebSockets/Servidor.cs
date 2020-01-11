@@ -55,6 +55,7 @@ namespace WebSockets
                 Buffer = new byte[escucho.SendBufferSize];
                 int bytesRead = escucho.Receive(Buffer);
                 byte[] formatted = new byte[bytesRead];
+
                 for (int i = 0; i < bytesRead; i++)
                 {
                     formatted[i] = Buffer[i];
